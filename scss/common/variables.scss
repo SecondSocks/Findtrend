@@ -1,0 +1,15 @@
+//* Ширины сайта под разные устройства
+$site-width-pc: 1440px;
+$site-width-mobile: 375px;
+
+//* Цвета и картинки заднего фона
+$bg-image-pc: "/resources/background-pc.jpeg";
+$bg-image-mobile: "/resources/background-pc.jpeg";
+$color-green: rgb(168, 255, 53);  //? Подходит для некоторых кнопок
+$color-white: rgb(245, 245, 245);
+$color-black: rgb(0, 0, 0);
+$color-grey: rgb(173, 173, 173);
+
+//* Настройки лого
+$logo-width: 170px;
+$logo-height: 41px;

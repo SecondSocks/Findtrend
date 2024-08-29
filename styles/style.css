@@ -1,3 +1,221 @@
+body p {
+  font-family: Effra;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 100%;
+}
+body h1 {
+  font-family: Effra;
+  font-weight: 900;
+  line-height: 112%;
+  letter-spacing: 0%;
+}
 
+header {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("/resources/background-pc.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+header nav {
+  width: 1280px;
+  height: 99px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+header nav a {
+  color: rgb(245, 245, 245);
+  outline: none;
+  text-decoration: none;
+}
+header nav a:link {
+  color: rgb(245, 245, 245);
+}
+header nav a:visited {
+  color: rgb(245, 245, 245);
+}
+header nav a:focus {
+  border-bottom: 1px solid;
+}
+header nav a:hover {
+  border-bottom: 1px solid;
+}
+header nav a:active {
+  color: rgb(173, 173, 173);
+}
+header nav .head-logo .logo {
+  width: 170px;
+  height: 41px;
+}
+header nav .menu {
+  color: rgb(245, 245, 245);
+  display: flex;
+  font-size: 18px;
+  text-align: center;
+}
+header nav .menu p {
+  margin-right: 40px;
+}
+header nav .auth {
+  display: flex;
+}
+header nav .auth__login {
+  color: rgb(245, 245, 245);
+  margin-right: 40px;
+}
+header nav .auth__register {
+  width: 129px;
+  height: 42px;
+  border-radius: 40px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+}
+header .hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 700px;
+  height: 338px;
+}
+header .hero-content-wrapper .content-text {
+  justify-content: center;
+  text-align: center;
+  margin-top: 99px;
+}
+header .hero-content-wrapper .content-text h1 {
+  font-size: 72px;
+  color: rgb(245, 245, 245);
+  width: 100%;
+  height: 81px;
+  margin: 0;
+}
+header .hero-content-wrapper .content-text p {
+  font-size: 18px;
+  color: rgb(173, 173, 173);
+  width: 666px;
+  height: 54px;
+}
+header .hero-content-wrapper .content-action {
+  display: flex;
+  justify-content: center;
+}
+@keyframes button-slide {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+header .hero-content-wrapper .content-action button {
+  background-color: rgb(168, 255, 53);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  line-height: 140%;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0px 0px 21px rgb(36, 36, 36);
+  width: 180px;
+  height: 57px;
+  margin-top: 40px;
+}
+header .hero-content-wrapper .content-action button:hover {
+  box-shadow: inset 0px 0px 21px rgb(36, 36, 36);
+}
+header .hero-content-wrapper .content-action button:active {
+  box-shadow: inset 0px 0px 50px rgb(36, 36, 36);
+}
+header .hero-content-wrapper .content-action .img-hero {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 99px;
+  height: 70px;
+  margin-top: 40px;
+  margin-left: 18px;
+}
+header .hero-content-wrapper .content-action .img-hero img {
+  width: 28px;
+  height: 34px;
+  transform: rotate(107.94deg);
+}
+header .hero-content-wrapper .content-action .img-hero p {
+  text-align: center;
+  color: rgb(245, 245, 245);
+  font-size: 18px;
+  transform: rotate(6deg);
+  border: 1px dashed rgb(245, 245, 245);
+}
+header .btn-hero-socmed {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 94px;
+  position: relative;
+  width: 1076px;
+  height: 178px;
+}
+header .btn-hero-socmed img {
+  width: 314px;
+  height: 82px;
+}
+header .btn-hero-socmed .image1 {
+  position: absolute;
+  z-index: 4;
+  transform: rotate(-4deg);
+  left: 0px;
+  top: 0px;
+}
+header .btn-hero-socmed .image2 {
+  position: absolute;
+  z-index: 3;
+  transform: rotate(2deg);
+  left: 205px;
+  top: 45px;
+}
+header .btn-hero-socmed .image3 {
+  position: absolute;
+  z-index: 2;
+  transform: rotate(-2deg);
+  left: 453px;
+  top: 3px;
+}
+header .btn-hero-socmed .image4 {
+  position: absolute;
+  z-index: 1;
+  transform: rotate(4deg);
+  left: 727px;
+  top: 41px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,218 @@
+header {
+	background-image: url('#{$bg-image-pc}');
+	background-repeat: no-repeat;
+	background-size: cover;
+	@extend %page-settings;
+	display: flex;
+	flex-direction: column;
+
+	nav {
+		width: 1280px;
+		height: 99px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+
+		a {
+			color: $color-white;
+			outline: none;
+			text-decoration: none;
+		}
+
+		a:link {
+			color: $color-white;
+		}
+
+		a:visited {
+			color: $color-white;
+		}
+
+		a:focus {
+			border-bottom: 1px solid;
+		}
+
+		a:hover {
+			border-bottom: 1px solid;
+		}
+
+		a:active {
+			color: $color-grey;
+		}
+
+		.head-logo {
+			.logo {
+				width: $logo-width;
+				height: $logo-height;
+			}
+		}
+
+		.menu {
+			color: $color-white;
+			display: flex;
+			font-size: 18px;
+			text-align: center;
+
+			p {
+				margin-right: 40px;
+			}
+		}
+
+		.auth {
+			display: flex;
+
+			&__login {
+				color: $color-white;
+				margin-right: 40px;
+			}
+			&__register {
+				width: 129px;
+				height: 42px;
+				border-radius: 40px;
+				color: $color-black;
+				background-color: $color-white;
+				text-align: center;
+			}
+		}
+	}
+
+	.hero-content-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		width: 700px;
+		height: 338px;
+
+		.content-text {
+			justify-content: center;
+			text-align: center;
+			margin-top: 99px;
+
+			h1 {
+				font-size: 72px;
+				color: $color-white;
+				width: 100%;
+				height: 81px;
+				margin: 0;
+			}
+
+			p {
+				font-size: 18px;
+				color: $color-grey;
+				width: 666px;
+				height: 54px;
+			}
+		}
+
+		.content-action {
+			display: flex;
+			justify-content: center;
+
+			@keyframes button-slide {
+				0% {
+					left: -30px;
+					margin-left: 0px;
+				}
+				30% {
+					left: 110%;
+					margin-left: 80px;
+				}
+				100% {
+					left: 110%;
+					margin-left: 80px;
+				}
+			}
+
+			button {
+				background-color: $color-green;
+				color: $color-black;
+				font-weight: 700;
+				line-height: 140%;
+				border-radius: 40px;
+				border: none;
+				box-shadow: 0px 0px 21px rgb(36, 36, 36);
+				width: 180px;
+				height: 57px;
+				margin-top: 40px;
+			}
+
+			button:hover {
+				box-shadow: inset 0px 0px 21px rgb(36, 36, 36);
+			}
+
+			button:active {
+				box-shadow: inset 0px 0px 50px rgb(36, 36, 36);
+			}
+
+
+			.img-hero {
+				display: flex;
+				flex-direction: column-reverse;
+				width: 99px;
+				height: 70px;
+				margin-top: 40px;
+				margin-left: 18px;
+
+				img {
+					width: 28px;
+					height: 34px;
+					transform: rotate(107.94deg);
+				}
+
+				p {
+					text-align: center;
+					color: $color-white;
+					font-size: 18px;
+					transform: rotate(6.00deg);
+					border: 1px dashed $color-white;
+				}
+			}
+		}
+	}
+
+	.btn-hero-socmed {
+		margin: 0 auto;
+		display: flex;
+		margin-top: 94px;
+		position: relative;
+		width: 1076px;
+		height: 178px;
+
+		img {
+			width: 314px;
+			height: 82px;
+		}
+
+		.image1 {
+			position: absolute;
+			z-index: 4;
+			transform: rotate(-4.00deg);
+			left: 0px;
+			top: 0px;
+		}
+
+		.image2 {
+			position: absolute;
+			z-index: 3;
+			transform: rotate(2.00deg);
+			left: 205px;
+			top: 45px;
+		}
+
+		.image3 {
+			position: absolute;
+			z-index: 2;
+			transform: rotate(-2.00deg);
+			left: 453px;
+			top: 3px;
+		}
+
+		.image4 {
+			position: absolute;
+			z-index: 1;
+			transform: rotate(4.00deg);
+			left: 727px;
+			top: 41px;
+		}
+	}
+}
