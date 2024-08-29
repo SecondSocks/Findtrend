@@ -1,17 +1,10 @@
 header {
-	background-image: url('#{$bg-image-pc}');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	flex-direction: column;
-
 	nav {
-		width: $site-width-pc;
 		height: 99px;
 		display: flex;
+		@extend %default-container-settings;
 		justify-content: space-between;
-		margin: 0 auto;
+		margin-top: 8px;
 
 		a {
 			color: $color-white;
@@ -41,8 +34,7 @@ header {
 
 		.head-logo {
 			.logo {
-				width: $logo-width;
-				height: $logo-height;
+				@extend %logo-settings;
 			}
 		}
 
@@ -65,22 +57,21 @@ header {
 				margin-right: 40px;
 			}
 			&__register {
-				width: 129px;
-				height: 42px;
-				border-radius: 40px;
 				color: $color-black;
 				background-color: $color-white;
-				text-align: center;
+				@include create-button(129px, 42px, 40px);
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 100%;
 			}
 		}
 	}
 
 	.hero-content-wrapper {
-		display: flex;
+		@extend %default-container-settings;
 		flex-direction: column;
 		justify-content: center;
-		margin: 0 auto;
-		width: 700px;
+		align-items: center;
 		height: 338px;
 
 		.content-text {
@@ -124,26 +115,18 @@ header {
 			}
 
 			button {
+				@include create-button(180px, 57px, 40px);
 				background-color: $color-green;
 				color: $color-black;
 				font-weight: 700;
 				line-height: 140%;
-				border-radius: 40px;
-				border: none;
 				box-shadow: 0px 0px 21px rgb(36, 36, 36);
-				width: 180px;
-				height: 57px;
 				margin-top: 40px;
 			}
 
-			button:hover {
-				box-shadow: inset 0px 0px 21px rgb(36, 36, 36);
-			}
-
 			button:active {
-				box-shadow: inset 0px 0px 50px rgb(36, 36, 36);
+				background-color: $color-dark-green;
 			}
-
 
 			.img-hero {
 				display: flex;
@@ -163,7 +146,7 @@ header {
 					text-align: center;
 					color: $color-white;
 					font-size: 18px;
-					transform: rotate(6.00deg);
+					transform: rotate(6deg);
 					border: 1px dashed $color-white;
 				}
 			}
@@ -171,8 +154,7 @@ header {
 	}
 
 	.btn-hero-socmed {
-		margin: 0 auto;
-		display: flex;
+		@extend %default-container-settings;
 		margin-top: 94px;
 		position: relative;
 		width: 1076px;
@@ -186,7 +168,7 @@ header {
 		.image1 {
 			position: absolute;
 			z-index: 4;
-			transform: rotate(-4.00deg);
+			transform: rotate(-4deg);
 			left: 0px;
 			top: 0px;
 		}
@@ -194,7 +176,7 @@ header {
 		.image2 {
 			position: absolute;
 			z-index: 3;
-			transform: rotate(2.00deg);
+			transform: rotate(2deg);
 			left: 205px;
 			top: 45px;
 		}
@@ -202,7 +184,7 @@ header {
 		.image3 {
 			position: absolute;
 			z-index: 2;
-			transform: rotate(-2.00deg);
+			transform: rotate(-2deg);
 			left: 453px;
 			top: 3px;
 		}
@@ -210,7 +192,7 @@ header {
 		.image4 {
 			position: absolute;
 			z-index: 1;
-			transform: rotate(4.00deg);
+			transform: rotate(4deg);
 			left: 727px;
 			top: 41px;
 		}

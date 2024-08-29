@@ -1,34 +1,135 @@
-body p {
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body p, body li {
   font-family: Effra;
-  font-weight: 400;
   letter-spacing: 0%;
-  line-height: 100%;
 }
 body h1 {
   font-family: Effra;
-  font-weight: 900;
-  line-height: 112%;
   letter-spacing: 0%;
+}
+body h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+
+footer, .about, header, .solution, .pricing, .work3, .work2, .work1 {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.solution, .pricing, .work3, .work2, .work1 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container, header .btn-hero-socmed, header .hero-content-wrapper, header nav, .solution .container, .pricing .container, .work3 .container .tweets, .work3 .container, .work2 .container, .about__container {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.solution .container, .pricing .container, .work3 .container .tweets, .work3 .container, .work2 .container, .about__container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container .logo img, header nav .head-logo .logo {
+  width: 170px;
+  height: 41px;
+}
+
+.solution .container button, .pricing .container .cards .card3 .content-container button, .pricing .container .cards .card2 .content-container button, .pricing .container .cards .card1 .content-container button, .work3 .container button, header .hero-content-wrapper .content-action button, header nav .auth__register {
+  border: none;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.pricing .container .cards .card3, .pricing .container .cards .card2, .pricing .container .cards .card1 {
+  display: flex;
+  width: 360px;
+  height: 700px;
+  border-radius: 24px;
+}
+
+.pricing .container .cards .card3 .content-container, .pricing .container .cards .card2 .content-container, .pricing .container .cards .card1 .content-container {
+  margin: 32px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing .container .cards .card3 .content-container .text h1, .pricing .container .cards .card2 .content-container .text h1, .pricing .container .cards .card1 .content-container .text h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.pricing .container .cards .card3 .content-container .text p, .pricing .container .cards .card2 .content-container .text p, .pricing .container .cards .card1 .content-container .text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.pricing .container .cards .card3 .content-container hr, .pricing .container .cards .card2 .content-container hr, .pricing .container .cards .card1 .content-container hr {
+  width: 296px;
+  height: 2px;
+  border: 0;
+  background-color: rgb(173, 173, 173);
+}
+
+.pricing .container .cards .card3 .content-container .price, .pricing .container .cards .card2 .content-container .price, .pricing .container .cards .card1 .content-container .price {
+  display: flex;
+  margin: 0;
+}
+.pricing .container .cards .card3 .content-container .price h1, .pricing .container .cards .card2 .content-container .price h1, .pricing .container .cards .card1 .content-container .price h1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-right: 8px;
+}
+.pricing .container .cards .card3 .content-container .price p, .pricing .container .cards .card2 .content-container .price p, .pricing .container .cards .card1 .content-container .price p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 80px;
+}
+
+.pricing .container .cards .card3 .content-container .advantages ul, .pricing .container .cards .card2 .content-container .advantages ul, .pricing .container .cards .card1 .content-container .advantages ul {
+  list-style-image: url("/resources/Tick.png");
+}
+.pricing .container .cards .card3 .content-container .advantages li, .pricing .container .cards .card2 .content-container .advantages li, .pricing .container .cards .card1 .content-container .advantages li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 body {
   margin: 0;
 }
 
-header {
-  background-image: url("/resources/background-pc.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-}
 header nav {
-  width: 1440px;
   height: 99px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin-top: 8px;
 }
 header nav a {
   color: rgb(245, 245, 245);
@@ -50,10 +151,6 @@ header nav a:hover {
 header nav a:active {
   color: rgb(173, 173, 173);
 }
-header nav .head-logo .logo {
-  width: 170px;
-  height: 41px;
-}
 header nav .menu {
   color: rgb(245, 245, 245);
   display: flex;
@@ -71,19 +168,19 @@ header nav .auth__login {
   margin-right: 40px;
 }
 header nav .auth__register {
+  color: rgb(0, 0, 0);
+  background-color: rgb(245, 245, 245);
   width: 129px;
   height: 42px;
   border-radius: 40px;
-  color: rgb(0, 0, 0);
-  background-color: rgb(245, 245, 245);
-  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
 }
 header .hero-content-wrapper {
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
-  width: 700px;
+  align-items: center;
   height: 338px;
 }
 header .hero-content-wrapper .content-text {
@@ -123,22 +220,18 @@ header .hero-content-wrapper .content-action {
   }
 }
 header .hero-content-wrapper .content-action button {
+  width: 180px;
+  height: 57px;
+  border-radius: 40px;
   background-color: rgb(168, 255, 53);
   color: rgb(0, 0, 0);
   font-weight: 700;
   line-height: 140%;
-  border-radius: 40px;
-  border: none;
   box-shadow: 0px 0px 21px rgb(36, 36, 36);
-  width: 180px;
-  height: 57px;
   margin-top: 40px;
 }
-header .hero-content-wrapper .content-action button:hover {
-  box-shadow: inset 0px 0px 21px rgb(36, 36, 36);
-}
 header .hero-content-wrapper .content-action button:active {
-  box-shadow: inset 0px 0px 50px rgb(36, 36, 36);
+  background-color: rgb(140, 200, 58);
 }
 header .hero-content-wrapper .content-action .img-hero {
   display: flex;
@@ -161,8 +254,6 @@ header .hero-content-wrapper .content-action .img-hero p {
   border: 1px dashed rgb(245, 245, 245);
 }
 header .btn-hero-socmed {
-  margin: 0 auto;
-  display: flex;
   margin-top: 94px;
   position: relative;
   width: 1076px;
@@ -201,18 +292,14 @@ header .btn-hero-socmed .image4 {
   top: 41px;
 }
 
-.about {
-  margin: 0;
-  background-color: rgb(168, 255, 53);
+header {
+  flex-direction: column;
+  background-image: url("/resources/background-pc.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-.about__container {
-  margin: 0 auto;
-  width: 1440px;
-  display: flex;
-  flex-direction: column;
-}
+
 .about__container h1 {
   text-align: center;
   margin-top: 140px;
@@ -290,10 +377,320 @@ header .btn-hero-socmed .image4 {
   margin-bottom: 140px;
 }
 
+.about {
+  background-color: rgb(168, 255, 53);
+}
+
+.work1 .title {
+  width: 1161px;
+  height: 304px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+.work1 .title h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.work1 .title .color-text {
+  color: rgb(173, 173, 173);
+}
+
+.work2 .container {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+.work2 .container h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.work2 .container img {
+  width: 1280px;
+  height: 576px;
+}
+
+.work3 .container {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+.work3 .container h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.work3 .container .apps {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 1160px;
+  margin-bottom: 80px;
+}
+.work3 .container .apps div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 124px;
+  margin-right: 24px;
+}
+.work3 .container .apps img {
+  width: 60px;
+  height: 60px;
+}
+.work3 .container .tweets .tweet1 {
+  width: 800px;
+  height: 274px;
+}
+.work3 .container .tweets .tweet2 {
+  width: 800px;
+  height: 804px;
+}
+.work3 .container .tweets .tweet3 {
+  width: 800px;
+  height: 274px;
+}
+.work3 .container button {
+  width: 198px;
+  height: 57px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+  color: rgb(245, 245, 245);
+  background-color: rgb(0, 0, 0);
+  margin-top: 96px;
+  margin-bottom: 156px;
+}
+
+.pricing .container__title {
+  display: block;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 1160px;
+  color: rgb(245, 245, 245);
+  margin-top: 140px;
+}
+.pricing .container__toggle {
+  display: flex;
+  margin: 0 auto;
+}
+.pricing .container__toggle h5 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.pricing .container__toggle .price-monthly {
+  color: rgb(245, 245, 245);
+  margin-right: 24px;
+}
+.pricing .container__toggle .price-yearly {
+  color: rgb(173, 173, 173);
+  margin-left: 24px;
+}
+.pricing .container__toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 36px;
+}
+.pricing .container__toggle .switch input {
+  display: none;
+}
+.pricing .container__toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.pricing .container__toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.pricing .container__toggle input:checked + .slider {
+  background-color: rgb(168, 255, 53);
+}
+.pricing .container__toggle input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+.pricing .container__toggle input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.pricing .container__toggle .slider.round {
+  border-radius: 34px;
+}
+.pricing .container__toggle .slider.round:before {
+  border-radius: 50%;
+}
+.pricing .container__toggle .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+.pricing .container__toggle .content p {
+  width: 71px;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px dashed rgb(173, 173, 173);
+  transform: rotate(6deg);
+  color: rgb(245, 245, 245);
+}
+.pricing .container__toggle .content img {
+  width: 28.39px;
+  height: 34.45px;
+  transform: rotate(107.94deg);
+}
+.pricing .container .cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 1160px;
+  margin-bottom: 140px;
+}
+.pricing .container .cards .card1 {
+  background-color: rgb(245, 245, 245);
+}
+.pricing .container .cards .card1 .content-container button {
+  width: 296px;
+  height: 58px;
+  border-radius: 29px;
+  margin-top: 165px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(168, 255, 53);
+}
+.pricing .container .cards .card1 .content-container button:active {
+  background-color: rgb(140, 200, 58);
+}
+.pricing .container .cards .card2 {
+  background-color: rgb(168, 255, 53);
+}
+.pricing .container .cards .card2 .content-container button {
+  width: 296px;
+  height: 58px;
+  border-radius: 29px;
+  margin-top: 115px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+  color: rgb(245, 245, 245);
+  background-color: rgb(0, 0, 0);
+}
+.pricing .container .cards .card2 .content-container button:active {
+  background-color: rgb(140, 200, 58);
+}
+.pricing .container .cards .card3 {
+  background-color: rgb(245, 245, 245);
+}
+.pricing .container .cards .card3 .content-container button {
+  width: 296px;
+  height: 58px;
+  border-radius: 29px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(168, 255, 53);
+}
+.pricing .container .cards .card3 .content-container button:active {
+  background-color: rgb(140, 200, 58);
+}
+
+.pricing {
+  background-color: rgb(0, 0, 0);
+}
+
+.solution .container {
+  margin-top: 140px;
+}
+.solution .container h1 {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 112%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.solution .container .color-text {
+  color: rgb(140, 200, 58);
+}
+.solution .container button {
+  width: 180px;
+  height: 57px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  color: rgb(245, 245, 245);
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 140px;
+}
+
+.solution {
+  background-color: rgb(168, 255, 53);
+}
+
 main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+footer .container {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 80px;
+}
+footer .container .logo img {
+  margin-top: 8px;
+}
+footer .container .info {
+  display: flex;
+  width: 544px;
+  justify-content: space-between;
+}
+footer .container .info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

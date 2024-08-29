@@ -1,0 +1,7 @@
+@import "./pricing";
+@import "./pricing-media";
+
+.pricing {
+	@extend %page-settings;
+	background-color: $color-black;
+}

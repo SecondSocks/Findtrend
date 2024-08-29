@@ -1,2 +1,8 @@
 @import "./header";
 @import "./header-media";
+
+header {
+	@extend %default-page-settings;
+	flex-direction: column;
+	@include back-image($bg-image-pc);
+}

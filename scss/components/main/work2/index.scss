@@ -1,0 +1,6 @@
+@import "./work2";
+@import "./work2-media";
+
+.work2 {
+	@extend %page-settings;
+}

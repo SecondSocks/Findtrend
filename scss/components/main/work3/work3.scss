@@ -1,0 +1,68 @@
+.work3 {
+	.container {
+		@extend %container-settings;
+		margin-top: 140px;
+		margin-bottom: 140px;
+
+		h1 {
+			font-size: 64px;
+			font-weight: 700;
+			line-height: 77px;
+			letter-spacing: 0%;
+			text-align: center;
+			margin-bottom: 80px;
+		}
+
+		.apps {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			width: 1160px;
+			margin-bottom: 80px;
+
+			div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 124px;
+				height: 124px;
+				margin-right: 24px;
+			}
+
+			img {
+				width: 60px;
+				height: 60px;
+			}
+		}
+
+		.tweets {
+			@extend %container-settings;
+
+			.tweet1 {
+				width: 800px;
+				height: 274px;
+			}
+
+			.tweet2 {
+				width: 800px;
+				height: 804px;
+			}
+
+			.tweet3 {
+				width: 800px;
+				height: 274px;
+			}
+		}
+
+		button {
+			@include create-button(198px, 57px, 40px);
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 140%;
+			color: $color-white;
+			background-color: $color-black;
+			margin-top: 96px;
+			margin-bottom: 156px;
+		}
+	}
+}

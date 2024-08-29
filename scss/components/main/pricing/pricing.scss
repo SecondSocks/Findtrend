@@ -1,0 +1,251 @@
+.pricing {
+	.container {
+		@extend %container-settings;
+
+		&__title {
+			display: block;
+			font-size: 64px;
+			font-weight: 700;
+			line-height: 77px;
+			letter-spacing: 0%;
+			text-align: center;
+			width: 1160px;
+			color: $color-white;
+			margin-top: 140px;
+		}
+
+		&__toggle {
+			display: flex;
+			margin: 0 auto;
+
+			h5 {
+				font-family: Inter;
+				font-size: 24px;
+				font-weight: 500;
+				line-height: 29px;
+				letter-spacing: 0%;
+				text-align: center;
+			}
+
+			.price-monthly {
+				color: $color-white;
+				margin-right: 24px;
+			}
+
+			.price-yearly {
+				color: $color-grey;
+				margin-left: 24px;
+			}
+
+			.switch {
+				position: relative;
+				display: inline-block;
+				width: 60px;
+				height: 34px;
+				margin-top: 36px;
+
+				input {
+					display: none;
+				}
+			}
+
+			.slider {
+				position: absolute;
+				cursor: pointer;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #ccc;
+				-webkit-transition: 0.4s;
+				transition: 0.4s;
+			}
+
+			.slider:before {
+				position: absolute;
+				content: '';
+				height: 26px;
+				width: 26px;
+				left: 4px;
+				bottom: 4px;
+				background-color: white;
+				-webkit-transition: 0.4s;
+				transition: 0.4s;
+			}
+
+			input:checked + .slider {
+				background-color: $color-green;
+			}
+
+			input:focus + .slider {
+				box-shadow: 0 0 1px #2196f3;
+			}
+
+			input:checked + .slider:before {
+				-webkit-transform: translateX(26px);
+				-ms-transform: translateX(26px);
+				transform: translateX(26px);
+			}
+
+			.slider.round {
+				border-radius: 34px;
+			}
+
+			.slider.round:before {
+				border-radius: 50%;
+			}
+
+			.content {
+				display: flex;
+				flex-direction: column;
+				margin-left: 24px;
+
+				p {
+					width: 71px;
+					height: 28px;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 14px;
+					letter-spacing: 0%;
+					text-align: center;
+					border: 1px dashed $color-grey;
+					transform: rotate(6deg);
+					color: $color-white;
+				}
+
+				img {
+					width: 28.39px;
+					height: 34.45px;
+					transform: rotate(107.94deg);
+				}
+			}
+		}
+
+		.cards {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			margin-top: 40px;
+			width: 1160px;
+			margin-bottom: 140px;
+
+			.card1 {
+				@extend %card-settings;
+				background-color: $color-white;
+				
+
+				.content-container {
+					@extend %card-container-settings;
+
+					.text {
+						@extend %card-text-block-settings;
+					}
+
+					hr {
+						@extend %card-line;
+					}
+
+					.price {
+						@extend %card-prices;
+					}
+
+					.advantages {
+						@extend %card-advantages;
+					}
+
+					button {
+						@include create-button(296px, 58px, 29px);
+						margin-top: 165px;	
+						font-size: 18px;
+						font-weight: 700;
+						line-height: 140%;
+						color: $color-black;
+						background-color: $color-green;
+					}
+
+					button:active {
+						background-color: $color-dark-green;
+					}
+				}
+			}
+
+			.card2 {
+				@extend %card-settings;
+				background-color: $color-green;
+				
+				.content-container {
+					@extend %card-container-settings;
+
+					.text {
+						@extend %card-text-block-settings;
+					}
+
+					hr {
+						@extend %card-line;
+					}
+
+					.price {
+						@extend %card-prices;
+					}
+
+					.advantages {
+						@extend %card-advantages;
+					}
+
+					button {
+						@include create-button(296px, 58px, 29px);
+						margin-top: 115px;
+						font-size: 18px;
+						font-weight: 700;
+						line-height: 140%;
+						color: $color-white;
+						background-color: $color-black;
+					}
+
+					button:active {
+						background-color: $color-dark-green;
+					}
+				}
+			}
+
+			.card3 {
+				@extend %card-settings;
+				background-color: $color-white;
+
+				.content-container {
+					@extend %card-container-settings;
+
+					.text {
+						@extend %card-text-block-settings;
+					}
+
+					hr {
+						@extend %card-line;
+					}
+
+					.price {
+						@extend %card-prices;
+					}
+
+					.advantages {
+						@extend %card-advantages;
+					}
+
+					button {
+						@include create-button(296px, 58px, 29px);
+						margin-top: 20px;
+						font-size: 18px;
+						font-weight: 700;
+						line-height: 140%;
+						color: $color-black;
+						background-color: $color-green;
+					}
+
+					button:active {
+						background-color: $color-dark-green;
+					}
+				}
+			}
+		}
+	}
+}

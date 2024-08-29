@@ -1,14 +1,6 @@
 .about {
-	margin: 0;
-	background-color: $color-green;
-	background-repeat: no-repeat;
-	background-size: cover;
-
 	&__container {
-		margin: 0 auto;
-		width: $site-width-pc;
-		display: flex;
-		flex-direction: column;
+		@extend %container-settings;
 
 		h1 {
 			text-align: center;

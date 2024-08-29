@@ -1,0 +1,7 @@
+@import "./solution";
+@import "./solution-media";
+
+.solution {
+	@extend %page-settings;
+	background-color: $color-green;
+}

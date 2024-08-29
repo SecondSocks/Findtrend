@@ -1,0 +1,28 @@
+.solution {
+	.container {
+		@extend %container-settings;
+		margin-top: 140px;
+
+		h1 {
+			font-size: 72px;
+			font-weight: 900;
+			line-height: 112%;
+			letter-spacing: 0%;
+			text-align: center;
+		}
+
+		.color-text {
+			color: $color-dark-green;
+		}
+
+		button {
+			@include create-button(180px, 57px, 40px);
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 140%;
+			color: $color-white;
+			background-color: $color-black;
+			margin-bottom: 140px;
+		}
+	}
+}

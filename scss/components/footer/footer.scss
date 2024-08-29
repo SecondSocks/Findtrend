@@ -1,0 +1,32 @@
+footer {
+	@extend %default-page-settings;
+
+	.container {
+		@extend %default-container-settings;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 80px;
+
+
+		.logo {
+			img {
+				@extend %logo-settings;
+				margin-top: 8px;
+			}
+		}
+
+		.info {
+			display: flex;
+			width: 544px;
+			justify-content: space-between;
+
+			p {
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 100%;
+				letter-spacing: 0%;
+				text-align: center;
+			}
+		}
+	}
+}

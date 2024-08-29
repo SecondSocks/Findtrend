@@ -1,2 +1,7 @@
 @import "./about";
 @import "./about-media";
+
+.about {
+	@extend %default-page-settings;
+	background-color: $color-green;
+}
