@@ -2,18 +2,6 @@
 @import "./variables";
 @import "./extends";
 
-
-html {
-	box-sizing: border-box;
-}
-
-*,
-*::after {
-	box-sizing: inherit;
-}
-
 body {
-	width: 100%;
-	min-width: 960px;
-	margin: 0 auto
+	margin: 0;
 }

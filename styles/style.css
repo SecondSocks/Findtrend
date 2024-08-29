@@ -11,37 +11,20 @@ body h1 {
   letter-spacing: 0%;
 }
 
-header {
-  width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
-  width: 100%;
-  min-width: 960px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 header {
   background-image: url("/resources/background-pc.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
 }
 header nav {
-  width: 1280px;
+  width: 1440px;
   height: 99px;
   display: flex;
   justify-content: space-between;
@@ -216,6 +199,101 @@ header .btn-hero-socmed .image4 {
   transform: rotate(4deg);
   left: 727px;
   top: 41px;
+}
+
+.about {
+  margin: 0;
+  background-color: rgb(168, 255, 53);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about__container {
+  margin: 0 auto;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+.about__container h1 {
+  text-align: center;
+  margin-top: 140px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 86px;
+}
+.about__container .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__container .container__left {
+  display: flex;
+  flex-direction: column;
+}
+.about__container .container__left img {
+  width: 28.39px;
+  height: 34.45px;
+  transform: rotate(-72.06deg);
+}
+.about__container .container__left p {
+  width: 93px;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  transform: rotate(6deg);
+  border: 1px dashed rgb(173, 173, 173);
+  margin-bottom: 0;
+}
+.about__container .container__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 502px;
+  height: 202px;
+  margin-left: 26px;
+  margin-right: 26px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 16px;
+}
+.about__container .container__center img {
+  width: 341.23px;
+  height: 82px;
+}
+.about__container .container__right {
+  display: flex;
+  flex-direction: column;
+  width: 99px;
+  height: 69px;
+}
+.about__container .container__right img {
+  width: 28.39px;
+  height: 34.45px;
+  transform: rotate(107.94deg);
+}
+.about__container .container__right p {
+  width: 93px;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  transform: rotate(6deg);
+  border: 1px dashed rgb(173, 173, 173);
+  margin-bottom: 0;
+}
+.about__container .text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 1440px;
+  height: 54px;
+  margin-bottom: 140px;
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

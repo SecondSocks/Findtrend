@@ -2,12 +2,12 @@ header {
 	background-image: url('#{$bg-image-pc}');
 	background-repeat: no-repeat;
 	background-size: cover;
-	@extend %page-settings;
+	background-position: center;
 	display: flex;
 	flex-direction: column;
 
 	nav {
-		width: 1280px;
+		width: $site-width-pc;
 		height: 99px;
 		display: flex;
 		justify-content: space-between;
