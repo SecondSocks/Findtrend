@@ -24,5 +24,9 @@
 			background-color: $color-black;
 			margin-bottom: 140px;
 		}
+
+		button:active {
+			background-color: $color-dark-lime;
+		}
 	}
 }

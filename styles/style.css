@@ -121,6 +121,10 @@ footer .container .logo img, header nav .head-logo .logo {
   margin-bottom: 30px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -135,6 +139,7 @@ header nav a {
   color: rgb(245, 245, 245);
   outline: none;
   text-decoration: none;
+  transition: 1s;
 }
 header nav a:link {
   color: rgb(245, 245, 245);
@@ -147,6 +152,7 @@ header nav a:focus {
 }
 header nav a:hover {
   border-bottom: 1px solid;
+  font-size: 24px;
 }
 header nav a:active {
   color: rgb(173, 173, 173);
@@ -176,6 +182,10 @@ header nav .auth__register {
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
+  transition: 0.1s;
+}
+header nav .auth__register:active {
+  background-color: rgb(140, 200, 58);
 }
 header .hero-content-wrapper {
   flex-direction: column;
@@ -205,20 +215,6 @@ header .hero-content-wrapper .content-action {
   display: flex;
   justify-content: center;
 }
-@keyframes button-slide {
-  0% {
-    left: -30px;
-    margin-left: 0px;
-  }
-  30% {
-    left: 110%;
-    margin-left: 80px;
-  }
-  100% {
-    left: 110%;
-    margin-left: 80px;
-  }
-}
 header .hero-content-wrapper .content-action button {
   width: 180px;
   height: 57px;
@@ -229,9 +225,10 @@ header .hero-content-wrapper .content-action button {
   line-height: 140%;
   box-shadow: 0px 0px 21px rgb(36, 36, 36);
   margin-top: 40px;
+  transition: 0.1s;
 }
 header .hero-content-wrapper .content-action button:active {
-  background-color: rgb(140, 200, 58);
+  background-color: rgb(135, 211, 34);
 }
 header .hero-content-wrapper .content-action .img-hero {
   display: flex;
@@ -469,6 +466,10 @@ header {
   background-color: rgb(0, 0, 0);
   margin-top: 96px;
   margin-bottom: 156px;
+  transition: 0.1s;
+}
+.work3 .container button:active {
+  background-color: rgb(135, 211, 34);
 }
 
 .pricing .container__title {
@@ -661,6 +662,9 @@ header {
   background-color: rgb(0, 0, 0);
   margin-bottom: 140px;
 }
+.solution .container button:active {
+  background-color: rgb(135, 211, 34);
+}
 
 .solution {
   background-color: rgb(168, 255, 53);
@@ -672,6 +676,39 @@ main {
   flex-direction: column;
 }
 
+.btn-up {
+  position: fixed;
+  background-color: rgb(245, 245, 245);
+  width: 60px;
+  height: 50px;
+  right: 20px;
+  bottom: 0px;
+  cursor: pointer;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-up::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("/resources/to-top.png");
+}
+
+.btn-up__hide {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: rgb(135, 211, 34);
+  }
+}
 footer .container {
   justify-content: space-between;
   align-items: center;
@@ -684,6 +721,28 @@ footer .container .info {
   display: flex;
   width: 544px;
   justify-content: space-between;
+}
+footer .container .info a {
+  color: rgb(0, 0, 0);
+  outline: none;
+  text-decoration: none;
+  transition: 1s;
+}
+footer .container .info a:link {
+  color: rgb(0, 0, 0);
+}
+footer .container .info a:visited {
+  color: rgb(0, 0, 0);
+}
+footer .container .info a:focus {
+  border-bottom: 1px solid;
+}
+footer .container .info a:hover {
+  border-bottom: 1px solid;
+  font-size: 24px;
+}
+footer .container .info a:active {
+  color: rgb(135, 211, 34);
 }
 footer .container .info p {
   font-size: 18px;

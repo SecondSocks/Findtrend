@@ -10,6 +10,7 @@ header {
 			color: $color-white;
 			outline: none;
 			text-decoration: none;
+			transition: 1s;
 		}
 
 		a:link {
@@ -26,6 +27,7 @@ header {
 
 		a:hover {
 			border-bottom: 1px solid;
+			font-size: 24px;
 		}
 
 		a:active {
@@ -63,7 +65,13 @@ header {
 				font-size: 16px;
 				font-weight: 400;
 				line-height: 100%;
+				transition: 0.1s;
 			}
+
+			&__register:active {
+				background-color: $color-dark-green;
+			}
+			
 		}
 	}
 
@@ -99,21 +107,6 @@ header {
 			display: flex;
 			justify-content: center;
 
-			@keyframes button-slide {
-				0% {
-					left: -30px;
-					margin-left: 0px;
-				}
-				30% {
-					left: 110%;
-					margin-left: 80px;
-				}
-				100% {
-					left: 110%;
-					margin-left: 80px;
-				}
-			}
-
 			button {
 				@include create-button(180px, 57px, 40px);
 				background-color: $color-green;
@@ -122,10 +115,11 @@ header {
 				line-height: 140%;
 				box-shadow: 0px 0px 21px rgb(36, 36, 36);
 				margin-top: 40px;
+				transition: 0.1s;
 			}
 
 			button:active {
-				background-color: $color-dark-green;
+				background-color: $color-dark-lime;
 			}
 
 			.img-hero {

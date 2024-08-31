@@ -10,3 +10,43 @@ main {
 	display: flex;
 	flex-direction: column;
 }
+
+.btn-up {
+	position: fixed;
+	background-color: $color-white;
+	width: 60px;
+	height: 50px;
+	right: 20px;
+	bottom: 0px;
+	cursor: pointer;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.3s ease-in-out;
+	opacity: 1;
+}
+
+.btn-up::before {
+	content: "";
+	width: 40px;
+	height: 40px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+	background-image: url('/resources/to-top.png');
+}
+
+.btn-up__hide {
+	display: none;
+}
+
+.btn-up__hiding {
+	opacity: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.btn-up:hover {
+		background-color: $color-dark-lime;
+	}
+}

@@ -63,6 +63,12 @@
 			background-color: $color-black;
 			margin-top: 96px;
 			margin-bottom: 156px;
+			transition: 0.1s;
+		}
+
+
+		button:active {
+			background-color: $color-dark-lime;
 		}
 	}
 }

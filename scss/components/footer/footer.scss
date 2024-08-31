@@ -7,7 +7,6 @@ footer {
 		align-items: center;
 		margin: 0 80px;
 
-
 		.logo {
 			img {
 				@extend %logo-settings;
@@ -19,6 +18,34 @@ footer {
 			display: flex;
 			width: 544px;
 			justify-content: space-between;
+
+			a {
+				color: $color-black;
+				outline: none;
+				text-decoration: none;
+				transition: 1s;
+			}
+
+			a:link {
+				color: $color-black;
+			}
+
+			a:visited {
+				color: $color-black;
+			}
+
+			a:focus {
+				border-bottom: 1px solid;
+			}
+
+			a:hover {
+				border-bottom: 1px solid;
+				font-size: 24px;
+			}
+
+			a:active {
+				color: $color-dark-lime;
+			}
 
 			p {
 				font-size: 18px;
