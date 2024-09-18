@@ -80,6 +80,7 @@
 %card-prices {
 	display: flex;
 	margin: 0;
+	margin-bottom: 20px;
 
 	h1 {
 		font-size: 64px;
@@ -96,13 +97,14 @@
 		line-height: 100%;
 		letter-spacing: 0%;
 		text-align: left;
-		margin-top: 80px;
+		margin-top: 40px;
 	}
 }
 
 %card-advantages {
 	ul {
 		list-style-image: url('#{$logo-marker}');
+		margin-left: 20px;
 	}
 
 	li {

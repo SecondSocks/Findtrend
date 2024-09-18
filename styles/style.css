@@ -1,17 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-body p, body li {
+html p, html li {
   font-family: Effra;
   letter-spacing: 0%;
 }
-body h1 {
+html h1 {
   font-family: Effra;
   letter-spacing: 0%;
 }
-body h5 {
+html h5 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   line-height: 29px;
   letter-spacing: 0%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 footer, .about, header, .solution, .pricing, .work3, .work2, .work1 {
@@ -91,6 +141,7 @@ footer .container .logo img, header nav .head-logo .logo {
 .pricing .container .cards .card3 .content-container .price, .pricing .container .cards .card2 .content-container .price, .pricing .container .cards .card1 .content-container .price {
   display: flex;
   margin: 0;
+  margin-bottom: 20px;
 }
 .pricing .container .cards .card3 .content-container .price h1, .pricing .container .cards .card2 .content-container .price h1, .pricing .container .cards .card1 .content-container .price h1 {
   font-size: 64px;
@@ -106,11 +157,12 @@ footer .container .logo img, header nav .head-logo .logo {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: left;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .pricing .container .cards .card3 .content-container .advantages ul, .pricing .container .cards .card2 .content-container .advantages ul, .pricing .container .cards .card1 .content-container .advantages ul {
   list-style-image: url("/resources/Tick.png");
+  margin-left: 20px;
 }
 .pricing .container .cards .card3 .content-container .advantages li, .pricing .container .cards .card2 .content-container .advantages li, .pricing .container .cards .card1 .content-container .advantages li {
   font-size: 18px;
@@ -165,6 +217,7 @@ header nav .menu {
 }
 header nav .menu p {
   margin-right: 40px;
+  margin-top: 8px;
 }
 header nav .auth {
   display: flex;
@@ -172,6 +225,7 @@ header nav .auth {
 header nav .auth__login {
   color: rgb(245, 245, 245);
   margin-right: 40px;
+  margin-top: 8px;
 }
 header nav .auth__register {
   color: rgb(0, 0, 0);
@@ -186,6 +240,34 @@ header nav .auth__register {
 }
 header nav .auth__register:active {
   background-color: rgb(140, 200, 58);
+}
+header .login-menu {
+  background-color: rgb(245, 245, 245);
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .login-menu form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .login-menu form fieldset {
+  margin-bottom: 20px;
+}
+header .login-menu form button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 70px;
+}
+header .login-menu-hide {
+  display: none;
 }
 header .hero-content-wrapper {
   flex-direction: column;
@@ -482,6 +564,7 @@ header {
   width: 1160px;
   color: rgb(245, 245, 245);
   margin-top: 140px;
+  margin-bottom: 20px;
 }
 .pricing .container__toggle {
   display: flex;
@@ -508,7 +591,7 @@ header {
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin-top: 36px;
+  margin-top: 6px;
 }
 .pricing .container__toggle .switch input {
   display: none;
@@ -689,6 +772,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
 }
 
 .btn-up::before {
@@ -702,6 +787,10 @@ main {
 
 .btn-up__hide {
   display: none;
+}
+
+.btn-up__hiding {
+  opacity: 0;
 }
 
 @media (hover: hover) and (pointer: fine) {

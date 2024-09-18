@@ -48,6 +48,7 @@ header {
 
 			p {
 				margin-right: 40px;
+				margin-top: 8px;
 			}
 		}
 
@@ -57,6 +58,7 @@ header {
 			&__login {
 				color: $color-white;
 				margin-right: 40px;
+				margin-top: 8px;
 			}
 			&__register {
 				color: $color-black;
@@ -71,10 +73,43 @@ header {
 			&__register:active {
 				background-color: $color-dark-green;
 			}
-			
 		}
 	}
 
+	.login-menu {
+		background-color: $color-white;
+		width: 300px;
+		height: 300px;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		form {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			fieldset {
+				margin-bottom: 20px;
+			}
+
+			button {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				margin-top: 70px;
+			}
+		}
+	}
+
+	.login-menu-hide {
+		display: none;
+	}
+
+	
 	.hero-content-wrapper {
 		@extend %default-container-settings;
 		flex-direction: column;
